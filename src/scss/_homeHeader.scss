@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  width: 1900px ;
+
+  .left {
+    flex: 1;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 1368px;
+      height: 963px;
+      left: -483px;
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 873px;
+    margin-right: 142px;
+
+    .login {
+      align-self: flex-end;
+      margin: 37px 0 17px 0;
+
+      .link {
+        font-size: 14px;
+        padding: 9px 10px;
+        text-decoration: none;
+        color: $color-grey;
+
+
+        &.register {
+          font-size: 13px;
+          border: 0.75px solid $color-yellow;
+        }
+      }
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 17px;
+
+      .nav-link {
+        padding: 9px 20px;
+        font-size: 18px;
+        color: $color-black;
+
+        &:first-child {
+          border: 0.75px solid $color-black;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .intro {
+      margin-top: 210px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1, h2 {
+        font-size: 38px;
+        text-align: center;
+      }
+
+      .decor {
+        width: 253px;
+        height: 53px;
+        margin-top: 25px;
+      }
+
+      .CTA {
+        width: 310px;
+        display: flex;
+        justify-content: center;
+        margin-top: 65px;
+        gap: 44px;
+
+        .cta-button {
+          background: none;
+          border: 0.75px solid $color-black;
+          font-size: 36px;
+          font-weight: lighter;
+          text-align: center;
+          text-decoration: none;
+          color: $color-black;
+          letter-spacing: 0;
+
+          &:first-child {
+            padding: 13px 93px;
+          }
+
+          &:last-child {
+            padding: 13px 51px;
+          }
+        }
+      }
+    }
+  }
+
+}

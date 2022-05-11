@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeHeader from "./HomeHeader";
+import HomeHeader from "./Header/HomeHeader";
 import HomeThreeColumns from "./HomeThreeColumns";
 import HomeSteps from "./HomeSteps";
 import HomeAbout from "./HomeAbout";
