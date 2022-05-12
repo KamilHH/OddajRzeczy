@@ -1,45 +1,46 @@
-.container {
+.header {
   display: flex;
-  width: 1900px ;
+  height: 100vh;
+  margin-right: 142px;
 
-  .left {
-    flex: 1;
+  &__left-column {
+    flex: 2;
     position: relative;
 
     img {
+      width: 100%;
+      height: 100%;
       position: absolute;
-      width: 1368px;
-      height: 963px;
-      left: -483px;
+      left: -100px;
+      object-fit:  fill;
     }
   }
 
-  .right {
-    flex: 1;
+  &__right-column {
+    flex: 3;
     display: flex;
     flex-direction: column;
-    width: 873px;
-    margin-right: 142px;
 
-    .login {
+
+
+    .header__login {
       align-self: flex-end;
       margin: 37px 0 17px 0;
 
-      .link {
+      .header__link {
         font-size: 14px;
         padding: 9px 10px;
         text-decoration: none;
         color: $color-grey;
 
-
-        &.register {
+        &--register {
           font-size: 13px;
           border: 0.75px solid $color-yellow;
         }
       }
     }
 
-    .navigation {
+    .header__menu {
       display: flex;
       justify-content: flex-end;
       margin-top: 17px;
@@ -59,15 +60,15 @@
       }
     }
 
-    .intro {
-      margin-top: 210px;
+    .header__intro {
+      margin-top: 110px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+
+
 
       h1, h2 {
-        font-size: 38px;
+        font-size: 30px;
         text-align: center;
       }
 
@@ -75,16 +76,16 @@
         width: 253px;
         height: 53px;
         margin-top: 25px;
+        align-self: center;
       }
 
-      .CTA {
-        width: 310px;
+      .buttons {
         display: flex;
         justify-content: center;
         margin-top: 65px;
         gap: 44px;
 
-        .cta-button {
+        &__item {
           background: none;
           border: 0.75px solid $color-black;
           font-size: 36px;
@@ -95,11 +96,11 @@
           letter-spacing: 0;
 
           &:first-child {
-            padding: 13px 93px;
+            padding: 13px 50px;
           }
 
           &:last-child {
-            padding: 13px 51px;
+            padding: 13px 50px;
           }
         }
       }

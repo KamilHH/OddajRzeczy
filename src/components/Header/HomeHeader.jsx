@@ -7,16 +7,16 @@ import {Link as RouterLink} from 'react-router-dom'
 
 const HomeHeader = () => {
     return (
-        <div className="container">
-            <div className="left">
-                <img src={HeroImage} alt="" className="img"/>
+        <div className="header">
+            <div className="header__left-column">
+                <img src={HeroImage} alt=""/>
             </div>
-            <div className="right">
-                <div className="login">
-                    <RouterLink className="link login" to={"/login"}>Zaloguj</RouterLink>
-                    <RouterLink className="link register" to={"/register"}>Załóż konto</RouterLink>
+            <div className="header__right-column">
+                <div className="header__login">
+                    <RouterLink className="header__link" to={"/login"}>Zaloguj</RouterLink>
+                    <RouterLink className="header__link header__link--register" to={"/register"}>Załóż konto</RouterLink>
                 </div>
-                <div className="navigation">
+                <div className="header__menu">
                     <nav>
                         <ul className="menu-list">
                             {headerData.map((e, i) => {
@@ -27,13 +27,13 @@ const HomeHeader = () => {
                         </ul>
                     </nav>
                 </div>
-                <div className="intro">
+                <div className="header__intro">
                     <h1>Zacznij pomagać! </h1>
                     <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
                     <img className="decor" src={Decoration} alt=""/>
-                    <div className="CTA">
-                        <RouterLink className="cta-button" to={"/login"}>ODDAJ RZECZY</RouterLink>
-                        <RouterLink className="cta-button" to={"/login"}>ZORGANIZUJ ZBIÓRKĘ</RouterLink>
+                    <div className="buttons">
+                        <RouterLink className="buttons__item" to={"/login"}>ODDAJ RZECZY</RouterLink>
+                        <RouterLink className="buttons__item" to={"/login"}>ZORGANIZUJ ZBIÓRKĘ</RouterLink>
                     </div>
                 </div>
             </div>
