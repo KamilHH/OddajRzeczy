@@ -6,22 +6,22 @@ export const headerData = [
     },
     {
         title: 'O co chodzi?',
-        path: 'oco',
+        path: 'steps',
         cName: 'nav-link'
     },
     {
         title: 'O nas',
-        path: 'onas',
+        path: 'about',
         cName: 'nav-link'
     },
     {
         title: 'Fundacja i organizacje',
-        path: 'fundacja',
+        path: 'foundation',
         cName: 'nav-link'
     },
     {
         title: 'Kontakt',
-        path: 'kontakt',
+        path: 'contact',
         cName: 'nav-link'
     },
 ]

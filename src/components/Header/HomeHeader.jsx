@@ -1,13 +1,13 @@
 import React from 'react';
 import HeroImage from '../../assets/Home-Hero-Image.jpg'
 import Decoration from '../../assets/Decoration.svg'
-import {headerData} from "./headerData";
+import {headerData} from  './headerData'
 import {Link} from 'react-scroll'
 import {Link as RouterLink} from 'react-router-dom'
 
 const HomeHeader = () => {
     return (
-        <div className="header">
+        <div className="header" id="start">
             <div className="header__left-column">
                 <img src={HeroImage} alt=""/>
             </div>
@@ -21,7 +21,7 @@ const HomeHeader = () => {
                         <ul className="menu-list">
                             {headerData.map((e, i) => {
                                 return (
-                                    <Link className={e.cName} key={i} to={`/${e.path}`}>{e.title}</Link>
+                                    <Link className={e.cName} key={i} to={`${e.path}`} spy={true} smooth={true}>{e.title}</Link>
                                 )
                             })}
                         </ul>
@@ -32,8 +32,8 @@ const HomeHeader = () => {
                     <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
                     <img className="decor" src={Decoration} alt=""/>
                     <div className="buttons">
-                        <RouterLink className="buttons__item" to={"/login"}>ODDAJ RZECZY</RouterLink>
-                        <RouterLink className="buttons__item" to={"/login"}>ZORGANIZUJ ZBIÓRKĘ</RouterLink>
+                        <RouterLink className="button" to={"/login"}>ODDAJ RZECZY</RouterLink>
+                        <RouterLink className="button" to={"/login"}>ZORGANIZUJ ZBIÓRKĘ</RouterLink>
                     </div>
                 </div>
             </div>
