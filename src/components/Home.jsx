@@ -3,7 +3,7 @@ import HomeHeader from "./Header/HomeHeader";
 import HomeThreeColumns from "./HomeThreeColumns";
 import HomeSteps from "./HomeSteps";
 import HomeAbout from "./HomeAbout";
-import HomeWho from "./HomeWho";
+import HomeFoundation from "./HomeFoundation";
 import HomeContact from "./HomeContact";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
             <HomeThreeColumns/>
             <HomeSteps/>
             <HomeAbout/>
-            <HomeWho/>
+            <HomeFoundation/>
             <HomeContact/>
         </div>
     );
