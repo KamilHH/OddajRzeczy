@@ -8,7 +8,7 @@ import HomeContact from "./HomeContact";
 
 const Home = () => {
     return (
-        <div>
+        <div className="home">
             <HomeHeader/>
             <HomeThreeColumns/>
             <HomeSteps/>
