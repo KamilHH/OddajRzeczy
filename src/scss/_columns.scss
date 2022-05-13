@@ -1,7 +1,7 @@
 @import "settings/mixins";
 .columns {
   display: flex;
-  padding: 46px 163px 86px 163px;
+  padding: 46px 80px 86px;
   background-color: $color-yellow;
 
   @include mobile {
@@ -15,10 +15,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0 40px;
 
-    &:nth-child(2) {
-      margin: 0 200px;
-    }
   }
 
   &__title{
