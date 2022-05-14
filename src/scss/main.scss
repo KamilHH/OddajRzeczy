@@ -1,10 +1,11 @@
 @import "settings/fonts";
 @import "settings/colors";
-@import "settings/button";
-@import "header.";
+@import "settings/buttons";
+@import "header";
 @import "columns";
 @import "steps";
 @import "about";
+@import "foundation";
 
 body {
   font-family: $font-base;
