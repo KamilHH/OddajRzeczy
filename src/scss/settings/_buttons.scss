@@ -1,0 +1,37 @@
+.button {
+  background: none;
+  border: 0.75px solid $color-black;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: none;
+  color: $color-black;
+  letter-spacing: 0;
+  cursor: pointer;
+
+  &--big {
+    width: 207px;
+    padding: 13px 50px;
+    font-size: 36px;
+  }
+
+  &--medium {
+    width: 208px;
+    height: 79px;
+    font-size: 24px;
+    border: none;
+    font-weight: normal;
+    text-align: center;
+    &:focus {
+      border: 0.75px solid $color-black;
+    }
+  }
+
+  &--small {
+    border: none;
+    font-size: 18px;
+    padding: 15px 13px;
+    &:focus {
+       border: 0.75px solid $color-black;
+    }
+  }
+}
