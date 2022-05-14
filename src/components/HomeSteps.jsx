@@ -39,7 +39,7 @@ const HomeSteps = () => {
                     <p className="steps__content">kurier przyjedzie w dogodnym terminie</p>
                 </div>
             </div>
-            <RouterLink className="button" to={"/login"}>ODDAJ RZECZY</RouterLink>
+            <RouterLink className="button button--big" to={"/login"}>ODDAJ RZECZY</RouterLink>
         </div>
     );
 };
