@@ -27,6 +27,10 @@
     border: none;
     font-size: 18px;
     padding: 15px 13px;
+
+    &:focus {
+      border: 0.75px solid $color-black;
+    }
   }
   &.active{
     border: 0.75px solid $color-black;
