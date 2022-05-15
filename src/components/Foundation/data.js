@@ -14,37 +14,37 @@ export const foundations = [
     },
     {
         id: 3,
-        title: "Fundacja “Bez domu",
+        title: "Fundacja “Bez domu”",
         subtitle: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
         description: "ubrania, jedzenie, ciepłe koce",
     },
     {
         id: 4,
-        title: "Fundacja “Bez domu",
+        title: "Fundacja “Bez domu”",
         subtitle: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
         description: "Lorem ipsum dolor sit ametx",
     },
     {
         id: 5,
         title: "Fundacja “Dbam o Zdrowie”",
-        subtitle: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+        subtitle: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
         description: "Lorem ipsum dolor sit amet",
     },
     {
         id: 6,
-        title: "Fundacja “Bez domu",
+        title: "Fundacja “Bez domu”",
         subtitle: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
         description: "Lorem ipsum dolor sit amet",
     },
     {
         id: 7,
-        title: "Fundacja “Bez domu",
+        title: "Fundacja “Bez domu”",
         subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id inventore?",
         description: "Lorem ipsum dolor sit amet",
     },
     {
         id: 8,
-        title: "Fundacja “Bez domu",
+        title: "Fundacja “Bez domu“",
         subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id inventore?",
         description: "Lorem ipsum dolor sit amet"
     },
