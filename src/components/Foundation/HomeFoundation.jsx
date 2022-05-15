@@ -64,6 +64,7 @@ const HomeFoundation = () => {
                             title={e.title}
                             active={selected === e.id}
                             setSelected={setSelected}
+                            setCurrentPage={setCurrentPage}
                         />
                     )
                 })}
@@ -72,9 +73,8 @@ const HomeFoundation = () => {
                 W naszej bazie znajdziesz listę zweryfikowanych
                 fundacji, z którymi współpracujemy. Możesz sprawdzić czym się
                 zajmują, komu pomagają i czego potrzebują.</p>
-
             <Posts data={currentPosts}/>
-            <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate}/>
+            <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate} />
         </div>
     );
 };
