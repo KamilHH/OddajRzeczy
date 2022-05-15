@@ -1,10 +1,13 @@
 import React from 'react';
 
-const FoundationButton = ({id, title, active, setSelected}) => {
+const FoundationButton = ({id, title, active, setSelected, setCurrentPage}) => {
     return (
         <button key={id}
                 className={active ? "button button--medium active" : "button button--medium"}
-                onClick={() => setSelected(id)}
+                onClick={() => {
+                    setSelected(id)
+                    setCurrentPage(1)
+                }}
         >
             {title}
         </button>
