@@ -16,7 +16,7 @@ const HomeHeader = () => {
                     <RouterLink className="header__link" to={"/login"}>Zaloguj</RouterLink>
                     <RouterLink className="header__link header__link--register" to={"/register"}>Załóż konto</RouterLink>
                 </div>
-                <header className="header__menu">
+                <div className="header__menu">
                     <nav>
                         <ul className="menu-list">
                             {headerData.map((e, i) => {
@@ -26,7 +26,7 @@ const HomeHeader = () => {
                             })}
                         </ul>
                     </nav>
-                </header>
+                </div>
                 <div className="header__intro">
                     <h1>Zacznij pomagać! </h1>
                     <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
