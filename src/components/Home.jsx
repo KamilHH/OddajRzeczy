@@ -4,7 +4,7 @@ import HomeThreeColumns from "./HomeThreeColumns";
 import HomeSteps from "./HomeSteps";
 import HomeAbout from "./HomeAbout";
 import HomeFoundation from "./Foundation/HomeFoundation";
-import HomeContact from "./HomeContact";
+import HomeContact from "./Contact/HomeContact";
 
 const Home = () => {
     return (

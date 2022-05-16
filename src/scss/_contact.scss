@@ -1,0 +1,93 @@
+.contact {
+  background-image: url("../assets/Background-Contact-Form.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+  overflow: hidden;
+
+
+  &__overlay {
+    overflow: hidden;
+    background: #FFFFFFC9 0 0 no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__container {
+    margin: 150px 300px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    align-self: flex-end;
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 38px;
+  }
+
+  &__decor {
+    margin: 25px 0 40px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__userinfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__userinfo-item {
+    width: 256px;
+    height: 62px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid $color-grey;
+  }
+
+  &__msg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  &__textarea {
+    width: 528px;
+    height: 97px;
+    resize: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $color-grey;
+    background-color: transparent;
+  }
+
+  .button {
+    align-self: flex-end;
+    margin-top: 30px;
+    padding: 13px 52px;
+  }
+}
