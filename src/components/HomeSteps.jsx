@@ -8,7 +8,7 @@ import {Link as RouterLink} from "react-router-dom";
 
 const HomeSteps = () => {
     return (
-        <div className="steps" id="steps">
+        <section className="steps" id="steps">
             <h1 className="steps__heading">
                 Wystarczą 4 proste kroki
             </h1>
@@ -40,7 +40,7 @@ const HomeSteps = () => {
                 </div>
             </div>
             <RouterLink className="button button--big" to={"/login"}>ODDAJ RZECZY</RouterLink>
-        </div>
+        </section>
     );
 };
 

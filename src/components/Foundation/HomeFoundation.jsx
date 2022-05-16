@@ -52,7 +52,7 @@ const HomeFoundation = () => {
     const paginate = (number) => setCurrentPage(number)
 
     return (
-        <div className="foundation" id="foundation">
+        <section className="foundation" id="foundation">
             <h1 className="foundation__heading">Komu pomagamy ?</h1>
             <img src={Decoration} alt="" className="foundation__decor"/>
             <div className="foundation__button-container">
@@ -75,7 +75,7 @@ const HomeFoundation = () => {
                 zajmują, komu pomagają i czego potrzebują.</p>
             <Posts data={currentPosts}/>
             <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate} />
-        </div>
+        </section>
     );
 };
 

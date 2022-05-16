@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomeThreeColumns = () => {
     return (
-        <div className="columns" id="3columns">
+        <section className="columns" id="3columns">
             <div className="columns__item">
                 <h1 className="columns__title">10</h1>
                 <h2 className="columns__description">ODDANYCH WORKÓW</h2>
@@ -31,7 +31,7 @@ const HomeThreeColumns = () => {
                 </p>
             </div>
 
-        </div>
+        </section>
     );
 };
 

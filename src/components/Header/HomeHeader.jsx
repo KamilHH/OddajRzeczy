@@ -7,7 +7,7 @@ import {Link as RouterLink} from 'react-router-dom'
 
 const HomeHeader = () => {
     return (
-        <div className="header" id="start">
+        <header className="header" id="start">
             <div className="header__left-column">
                 <img src={HeroImage} alt=""/>
             </div>
@@ -16,7 +16,7 @@ const HomeHeader = () => {
                     <RouterLink className="header__link" to={"/login"}>Zaloguj</RouterLink>
                     <RouterLink className="header__link header__link--register" to={"/register"}>Załóż konto</RouterLink>
                 </div>
-                <div className="header__menu">
+                <header className="header__menu">
                     <nav>
                         <ul className="menu-list">
                             {headerData.map((e, i) => {
@@ -26,7 +26,7 @@ const HomeHeader = () => {
                             })}
                         </ul>
                     </nav>
-                </div>
+                </header>
                 <div className="header__intro">
                     <h1>Zacznij pomagać! </h1>
                     <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
@@ -37,7 +37,7 @@ const HomeHeader = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     );
 };
 

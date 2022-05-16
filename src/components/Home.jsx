@@ -8,14 +8,18 @@ import HomeContact from "./Contact/HomeContact";
 
 const Home = () => {
     return (
-        <div className="home">
+        <>
             <HomeHeader/>
-            <HomeThreeColumns/>
-            <HomeSteps/>
-            <HomeAbout/>
-            <HomeFoundation/>
-            <HomeContact/>
-        </div>
+            <article>
+                <HomeThreeColumns/>
+                <HomeSteps/>
+                <HomeAbout/>
+                <HomeFoundation/>
+            </article>
+            <footer>
+                <HomeContact/>
+            </footer>
+        </>
     );
 };
 

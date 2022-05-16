@@ -4,12 +4,12 @@ import HomeFooter from "../Footer/HomeFooter";
 
 const HomeContact = () => {
     return (
-        <section className="contact">
+        <div className="contact">
             <div className="contact__overlay">
                 <ContactForm/>
                 <HomeFooter/>
             </div>
-        </section>
+        </div>
 
     );
 };

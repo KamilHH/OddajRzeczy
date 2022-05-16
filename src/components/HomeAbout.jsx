@@ -6,7 +6,7 @@ import Photo from '../assets/People.jpg'
 
 const HomeAbout = () => {
     return (
-        <div className="about" id="about">
+        <section className="about" id="about">
             <div className="about__left-column">
                 <h1 className="about__title">O nas</h1>
                 <img src={Decoration} alt="" className="about__decor"/>
@@ -19,7 +19,7 @@ const HomeAbout = () => {
             <div className="about__right-column">
                 <img src={Photo} alt="" className="about__img"/>
             </div>
-        </div>
+        </section>
     );
 };
 
