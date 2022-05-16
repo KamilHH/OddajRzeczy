@@ -1,6 +1,8 @@
+$border: 0.75px solid $color-black;
+
 .button {
   background: none;
-  border: 0.75px solid $color-black;
+  border: $border;
   font-weight: lighter;
   text-align: center;
   text-decoration: none;
@@ -29,10 +31,11 @@
     padding: 15px 13px;
 
     &:focus {
-      border: 0.75px solid $color-black;
+      border: $border;
     }
   }
   &.active{
-    border: 0.75px solid $color-black;
+    border: $border;
   }
 }
+
