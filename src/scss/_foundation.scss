@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  gap: 20px;
 
   &__heading {
     margin: 35px 0 25px;
@@ -68,7 +69,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 35px;
+  }
 
+  &__pagination-container {
+    height: 100px;
   }
 }

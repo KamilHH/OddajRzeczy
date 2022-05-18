@@ -18,12 +18,12 @@ const HomeFoundation = () => {
             title: 'Fundacjom'
         },
         {
-            id: 'locals',
-            title: 'Lokalnym zbiórkom'
-        },
-        {
             id: 'organizations',
             title: 'Organizacjom pozarządowym'
+        },
+        {
+            id: 'locals',
+            title: 'Lokalnym zbiórkom'
         },
     ];
 //change data on button click
@@ -58,23 +58,27 @@ const HomeFoundation = () => {
             <div className="foundation__button-container">
                 {list.map(e => {
                     return (
-                        <FoundationButton
-                            key={e.id}
-                            id={e.id}
-                            title={e.title}
-                            active={selected === e.id}
-                            setSelected={setSelected}
-                            setCurrentPage={setCurrentPage}
-                        />
+                        <>
+                            <FoundationButton
+                                key={e.id}
+                                id={e.id}
+                                title={e.title}
+                                active={selected === e.id}
+                                setSelected={setSelected}
+                                setCurrentPage={setCurrentPage}
+                            />
+                        </>
                     )
                 })}
             </div>
-            <p className="foundation__text">
+             <p className="foundation__text">
                 W naszej bazie znajdziesz listę zweryfikowanych
                 fundacji, z którymi współpracujemy. Możesz sprawdzić czym się
                 zajmują, komu pomagają i czego potrzebują.</p>
             <Posts data={currentPosts}/>
-            <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate} />
+            <div className="foundation__pagination-container">
+                <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate}/>
+            </div>
         </section>
     );
 };
