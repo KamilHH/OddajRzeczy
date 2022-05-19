@@ -76,6 +76,7 @@
       outline: none;
       border-bottom: 1px solid red;
       margin-top: 5px;
+      background-color: transparent;
     }
   }
 
@@ -91,8 +92,8 @@
     resize: none;
     border: none;
     outline: none;
-    border-bottom: 1px solid $color-grey;
     background-color: transparent;
+    border-bottom: 1px solid $color-grey;
 
     &--active {
       width: 528px;
@@ -100,6 +101,7 @@
       border: none;
       outline: none;
       resize: none;
+      background-color: transparent;
       border-bottom: 1px solid red;
     }
   }
@@ -109,6 +111,7 @@
     font-weight: 600;
     margin-top: 5px;
     color: red;
+    background-color: transparent;
   }
 
   &__msg-success {
