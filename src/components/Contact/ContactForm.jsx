@@ -16,9 +16,9 @@ const ContactForm = () => {
         e.preventDefault();
         setFormErrors(validate(formValues));
         setIsSubmit(true);
+        sendMessage();
     };
-
-    useEffect(() => {
+    const sendMessage = () => {
         if (Object.keys(formErrors).length === 0 && isSubmit) {
             fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
                 method: 'POST',
@@ -32,7 +32,7 @@ const ContactForm = () => {
                 .then(data => console.log(data))
                 .catch(err => console.log(err));
         }
-    });
+    }
 
     const validate = (values) => {
         const errors = {};
