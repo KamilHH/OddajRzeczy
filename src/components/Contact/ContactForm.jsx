@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Decoration from "../../assets/Decoration.svg";
 
 const ContactForm = () => {
-    const initialValues = {username: "", email: "", msg: ""}
+    const initialValues = {name: "", email: "", message: ""}
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
@@ -27,7 +27,7 @@ const ContactForm = () => {
                     // 'Accept': 'application/json',
                     'Content-type': 'application/json'
                 },
-                body: JSON.stringify({formValues})
+                body: JSON.stringify(formValues)
             })
                 .then(res => res.json())
                 .then(data => console.log(data))
@@ -38,14 +38,14 @@ const ContactForm = () => {
     const validate = (values) => {
         const errors = {};
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-        if (!values.username || values.username.split(' ').length > 1) {
-            errors.username = "Podane imię jest nieprawidłowe";
+        if (!values.name || values.name.split(' ').length > 1) {
+            errors.name = "Podane imię jest nieprawidłowe";
         }
         if (!values.email || !re.test(values.email)) {
             errors.email = "Podany email jest nieprawidłowy";
         }
-        if (values.msg.length < 120) {
-            errors.msg = "Wiadomość musi mieć co najmniej 120 znaków";
+        if (values.message.length < 120) {
+            errors.message = "Wiadomość musi mieć co najmniej 120 znaków";
         }
         return errors;
     };
@@ -61,10 +61,10 @@ const ContactForm = () => {
                     <div className="contact__userinfo">
                         <div className="contact__userinfo-item">
                             <label className="contact__label">Wpisz swoje imię</label>
-                            <input className={formErrors.username ? "contact__input--active" : "contact__input"}
-                                   type="text" name="username" value={formValues.username}
+                            <input className={formErrors.name ? "contact__input--active" : "contact__input"}
+                                   type="text" name="name" value={formValues.name}
                                    onChange={handleChange}/>
-                            <p className="contact__msg-error">{formErrors.username}</p>
+                            <p className="contact__msg-error">{formErrors.name}</p>
                         </div>
                         <div className="contact__userinfo-item">
                             <label className="contact__label">Wpisz swój email</label>
@@ -76,11 +76,11 @@ const ContactForm = () => {
                     </div>
                     <div className="contact__msg">
                         <label className="contact__label">Wpisz swoją wiadomość</label>
-                        <textarea className={formErrors.msg ? "contact__textarea--active" : "contact__textarea"}
-                                  name="msg" value={formValues.msg}
+                        <textarea className={formErrors.message ? "contact__textarea--active" : "contact__textarea"}
+                                  name="message" value={formValues.message}
                                   onChange={handleChange}/>
                     </div>
-                    <p className="contact__msg-error">{formErrors.msg}</p>
+                    <p className="contact__msg-error">{formErrors.message}</p>
                 </div>
                 <button className="button button--small active" type="submit">Wyślij</button>
             </form>
