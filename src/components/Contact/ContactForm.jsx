@@ -20,7 +20,17 @@ const ContactForm = () => {
 
     useEffect(() => {
         if (Object.keys(formErrors).length === 0 && isSubmit) {
-            console.log(formValues)
+            fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
+                method: 'POST',
+                headers: {
+                    // 'Accept': 'application/json',
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify({formValues})
+            })
+                .then(res => res.json())
+                .then(data => console.log(data))
+                .catch(err => console.log(err));
         }
     });
 
