@@ -71,10 +71,6 @@ const HomeFoundation = () => {
                     )
                 })}
             </div>
-             <p className="foundation__text">
-                W naszej bazie znajdziesz listę zweryfikowanych
-                fundacji, z którymi współpracujemy. Możesz sprawdzić czym się
-                zajmują, komu pomagają i czego potrzebują.</p>
             <Posts data={currentPosts}/>
             <div className="foundation__pagination-container">
                 <Pagination postsPerPage={postsPerPage} totalPosts={data.length} paginate={paginate}/>

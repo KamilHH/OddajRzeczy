@@ -2,6 +2,9 @@ export const foundations = [
 
     {
         id: 1,
+        text: "W naszej bazie znajdziesz listę zweryfikowanych\n" +
+            "                fundacji, z którymi współpracujemy. Możesz sprawdzić czym się\n" +
+            "                zajmują, komu pomagają i czego potrzebują",
         title: "Fundacja “Dbam o Zdrowie”",
         subtitle: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
         description: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
@@ -60,6 +63,9 @@ export const locals = [
 
     {
         id: 1,
+        text: "W naszej bazie znajdziesz listę zweryfikowanych\n" +
+            "                lokalnych zbiórek, z którymi współpracujemy. Możesz sprawdzić czym się\n" +
+            "                zajmują, komu pomagają i czego potrzebują",
         title: "Lokalna zbiórka “Dbam o Zdrowie”",
         subtitle: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
         description: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
@@ -100,6 +106,9 @@ export const organizations = [
 
     {
         id: 1,
+        text: "W naszej bazie znajdziesz listę zweryfikowanych\n" +
+            "                organizacji, z którymi współpracujemy. Możesz sprawdzić czym się\n" +
+            "                zajmują, komu pomagają i czego potrzebują",
         title: "Organizacja “Dbam o Zdrowie”",
         subtitle: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
         description: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
