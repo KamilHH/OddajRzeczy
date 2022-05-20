@@ -14,6 +14,11 @@ flex-direction: column;
   &__heading {
     margin: 0;
     font-size: 38px;
+
+    &--logout {
+      font-size: 38px;
+      text-align: center;
+    }
   }
 
   &__decor {
@@ -121,5 +126,10 @@ flex-direction: column;
     width: 700px;
     display: flex;
     justify-content: space-between;
+
+    &--logout {
+      padding: 30px;
+      justify-content: center;
+    }
   }
 }
