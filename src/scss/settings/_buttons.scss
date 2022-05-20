@@ -30,9 +30,9 @@ $border: 0.75px solid $color-black;
     font-size: 18px;
     padding: 15px 13px;
 
-    //&:hover {
-    //  font-weight: bold;
-    //}
+    &:hover {
+      border: $border;
+    }
   }
   &.active{
     border: $border;
