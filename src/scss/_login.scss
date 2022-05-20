@@ -1,0 +1,125 @@
+.login {
+  display: flex;
+flex-direction: column;
+  margin-right: 142px;
+  &__container {
+
+    margin: 150px 300px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 38px;
+  }
+
+  &__decor {
+    margin: 25px 0 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //width: 100%;
+    background-color: $color-white;
+    padding: 60px 60px;
+  }
+
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__userinfo {
+
+  }
+
+  &__userinfo-item {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
+
+  &__label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid $color-grey;
+
+    &--active {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid red;
+      margin-top: 5px;
+      background-color: transparent;
+    }
+  }
+
+  &__msg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  &__textarea {
+    width: 528px;
+    height: 97px;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid $color-grey;
+
+    &--active {
+      width: 528px;
+      height: 97px;
+      border: none;
+      outline: none;
+      resize: none;
+      background-color: transparent;
+      border-bottom: 1px solid red;
+    }
+  }
+
+  &__msg-error {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: red;
+    background-color: transparent;
+  }
+
+  &__msg-success {
+
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: green;
+    text-align: center;
+  }
+
+  .button {
+    align-self: flex-end;
+    margin-top: 30px;
+    padding: 13px 52px;
+  }
+
+  &__button-container {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
