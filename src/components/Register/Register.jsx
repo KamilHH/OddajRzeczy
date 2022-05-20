@@ -49,7 +49,7 @@ const Register = () => {
                         </div>
                     </form>
                     <div className="login__button-container">
-                        <button className="button button--small active" type="submit">Zaloguj się</button>
+                        <button className="button button--small" type="submit">Zaloguj się</button>
                         <button className="button button--small active " type="submit">Załóż konto</button>
                     </div>
                 </div>
