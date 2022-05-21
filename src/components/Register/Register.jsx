@@ -30,10 +30,10 @@ const Register = () => {
         if (!password2) {
             errors.password2 = "Brak hasła"
         }
-        if (password.length < 6) {
+        else if (password.length < 6) {
             errors.password = "Podane hasło jest za krótkie"
         }
-        if (password2.length < 6) {
+        else if (password2.length < 6) {
             errors.password2 = "Podane hasło jest za krótkie"
         }
         else if (password !== password2) {
