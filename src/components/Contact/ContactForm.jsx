@@ -16,7 +16,6 @@ const ContactForm = () => {
         e.preventDefault();
         setFormErrors(validate(formValues));
         setIsSubmit(true);
-
     };
 
     useEffect(()=> {
