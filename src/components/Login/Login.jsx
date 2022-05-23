@@ -26,7 +26,7 @@ const Login = () => {
         if (!password) {
             errors.password = "Brak hasła"
         } else if (password.length < 6) {
-            errors.password = "Podane hasło jest nieprawidłowe"
+            errors.password = "Podane hasło jest za krótkie"
         }
         return errors;
     }
