@@ -20,8 +20,7 @@ const Register = () => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
         if (!email) {
             errors.email = "Brak email";
-        }
-        else if (!regex.test(email)) {
+        } else if (!regex.test(email)) {
             errors.email = "Podany email jest nieprawidłowy";
         }
         if (!password) {
@@ -29,18 +28,16 @@ const Register = () => {
         }
         if (!password2) {
             errors.password2 = "Brak hasła"
-        }
-        else if (password.length < 6) {
+        } else if (password.length < 6) {
             errors.password = "Podane hasło jest za krótkie"
         }
-        else if (password2.length < 6) {
+        if (password2.length < 6) {
             errors.password2 = "Podane hasło jest za krótkie"
-        }
-        else if (password !== password2) {
+        } else if (password !== password2) {
             errors.password = "Hasła muszą być identyczne"
         }
-        else if (password2 !== password) {
-            errors.password = "Hasła muszą być identyczne"
+        if (password2 !== password) {
+            errors.password2 = "Hasła muszą być identyczne"
         }
         return errors;
     }
