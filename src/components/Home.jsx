@@ -10,12 +10,12 @@ const Home = () => {
     return (
         <>
             <HomeHeader/>
-            <article>
+            <main>
                 <HomeThreeColumns/>
                 <HomeSteps/>
                 <HomeAbout/>
                 <HomeFoundation/>
-            </article>
+            </main>
             <footer>
                 <HomeContact/>
             </footer>
